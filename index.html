@@ -3,69 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio de Tatuajes - Tatuadora</title>
+  <title>Paz Drawing - Tatuajes</title>
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #111;
-      color: #f0f0f0;
+      background-color: #000;
+      color: #ffeb3b;
     }
 
     header {
-      background-color: #222;
+      background-color: #111;
       padding: 30px;
       text-align: center;
+      border-bottom: 3px solid #ffeb3b;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5em;
+      color: #ffeb3b;
     }
 
     nav {
-      background-color: #333;
+      background-color: #222;
       text-align: center;
       padding: 10px;
     }
 
     nav a {
-      color: #fff;
+      color: #ffeb3b;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
     }
 
     section {
       padding: 30px;
     }
 
-    .bio, .comentarios, .galeria, .ubicacion {
-      margin-bottom: 50px;
+    h2 {
+      border-left: 5px solid #ffeb3b;
+      padding-left: 10px;
+      color: #ffeb3b;
     }
 
     .galeria img {
       width: 100%;
       max-width: 300px;
       margin: 10px;
-      border: 2px solid #444;
-      border-radius: 5px;
+      border: 3px solid #ffeb3b;
+      border-radius: 8px;
     }
 
     .comentarios blockquote {
-      border-left: 4px solid #888;
+      border-left: 4px solid #ffeb3b;
       margin: 10px 0;
       padding-left: 15px;
       font-style: italic;
-      color: #ccc;
-    }
-
-    footer {
-      background-color: #222;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+      color: #f5f5f5;
     }
 
     iframe {
@@ -74,27 +79,79 @@
       border: none;
       border-radius: 10px;
     }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #ffeb3b;
+      border-top: 3px solid #ffeb3b;
+    }
+
+    a {
+      color: #ffeb3b;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    button {
+      background-color: transparent;
+      color: #ffeb3b;
+      border: 2px solid #ffeb3b;
+      padding: 12px 24px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background-color: #ffeb3b;
+      color: #000;
+      box-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;
+    }
+
+    input[type="date"],
+    input[type="time"] {
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 2px solid #ffeb3b;
+      background-color: #111;
+      color: #ffeb3b;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Paz Drawing Tattoo</h1>
-    <p>Blackout Blackwork
-    </p>
+    <h1>Paz Drawing</h1>
   </header>
- 
 
   <nav>
-    <a href="#bio">Sobre mí</a>
-    <a href="#galeria">Trabajos</a>
+    <a href="#bio">Biografía</a>
+    <a href="#galeria">Galería</a>
     <a href="#ubicacion">Ubicación</a>
-    <a href="#comentarios">Clientes</a>
+    <a href="#turnos">Turnos</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
-  <section class="bio" id="bio">
-    <h2>Sobre mí</h2>
-    <p>Soy Paz , Me especializo en tatuajes Blackout,y diseños personalizados. Trabajo con pasión, dedicación y respeto por cada historia que mis clientes llevan en la piel.</p>
+  <section id="bio">
+    <h2>Biografía</h2>
+    <p>Paz Drawing es una artista del tatuaje con base en Avellaneda, Buenos Aires. Apasionada por el arte y el detalle, trabaja con diseños personalizados y técnicas finas que expresan historias en la piel.</p>
   </section>
 
   <section class="galeria" id="galeria">
@@ -106,25 +163,52 @@
     </div>
   </section>
 
-  <section class="ubicacion" id="ubicacion">
+  <section id="ubicacion">
     <h2>Ubicación del estudio</h2>
-    <p>📍 Av.Mitre 633, Buenos Aires, Argentina</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy" allowfullscreen></iframe>
-    <!-- REEMPLAZÁ la URL del iframe con el enlace real del mapa -->
+    <p>Av. Mitre 633, Avellaneda, Buenos Aires</p>
+    <iframe src="https://www.google.com/maps?q=Av.+Mitre+633,+Avellaneda,+Buenos+Aires&output=embed"></iframe>
   </section>
 
-  <section class="comentarios" id="comentarios">
-    <h2>Lo que dicen mis clientes</h2>
-    <blockquote>"Paz tiene una mano increíble, me tatué por primera vez con ella y fue una experiencia hermosa."</blockquote>
-    <blockquote>"La atención, la limpieza y el resultado... todo de 10. ¡Muy recomendable!"</blockquote>
-    <blockquote>"Me ayudó a diseñar algo único, y quedó mejor de lo que imaginaba."</blockquote>
+  <section id="turnos">
+    <h2>Reservá tu turno</h2>
+    <p>Elegí una fecha y hora, y te redirigimos a WhatsApp para confirmar:</p>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora">
+
+    <br><br>
+    <button onclick="enviarTurno()">Agendar por WhatsApp</button>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Instagram: <a href="https://instagram.com/pazdrawing" target="_blank">@pazdrawing</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Paz Drawing - Todos los derechos reservados.</p>
-    <p>Instagram: <a href="https://instagram.com/pazdrawing" target="_blank" style="color:#fff;">@tunombre</a></p>
-    <p>WhatsApp: <a href="https://wa.me/5491112345678" target="_blank" style="color:#fff;">+54 9 11 1234-5678</a></p>
+    &copy; 2025 Paz Drawing - Todos los derechos reservados.
   </footer>
+
+  <script>
+    function enviarTurno() {
+      const fecha = document.getElementById('fecha').value;
+      const hora = document.getElementById('hora').value;
+
+      if (!fecha || !hora) {
+        alert("Por favor seleccioná una fecha y hora.");
+        return;
+      }
+
+      const mensaje = Hola Paz, quiero reservar un turno para el ${fecha} a las ${hora} hs.;
+      const numeroWhatsApp = '5491123456789'; // ← reemplazá con tu número real
+      const url = https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)};
+
+      window.open(url, '_blank');
+    }
+  </script>
 
 </body>
 </html>
