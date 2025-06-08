@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paz Drawing - Tatuajes</title>
-  <!-- Fuente Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -202,9 +202,9 @@
         return;
       }
 
-      const mensaje = Hola Paz, quiero reservar un turno para el ${fecha} a las ${hora} hs.;
-      const numeroWhatsApp = '5491123456789'; // ← reemplazá con tu número real
-      const url = https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)};
+      const mensaje = `Hola Paz, quiero reservar un turno para el ${fecha} a las ${hora} hs.`;
+      const numeroWhatsApp = '5491176378348';
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
       window.open(url, '_blank');
     }
